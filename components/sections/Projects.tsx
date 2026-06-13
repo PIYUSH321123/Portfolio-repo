@@ -21,7 +21,7 @@ const Project = () => {
           </h2>
           <p className="text-muted-foreground max-w-2xl mx-auto">
             Explore my latest projects showcasing my expertise in Full-stack
-            Development, from e-commerce platforms to AI-powered applications.
+            Development, from air quality monitoring dashboards to AI-powered applications.
           </p>
         </motion.div>
       </div>

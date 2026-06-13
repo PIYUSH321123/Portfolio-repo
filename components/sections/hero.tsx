@@ -27,11 +27,13 @@ const Hero = () => {
             Full Stack Developer, Building amazing web experiences with modern technologies
           </p>
           <div className="flex gap-4">
-            <Button size="lg" variant="outline">
+            <Button size="lg" variant="outline" className="hover:scale-105 transition-transform duration-200">
+              <a href="#contacts" className="flex items-center justify-center gap-2">
               <Mail className="w-4 h-4 mr-2" />
               Contact Me
+              </a>
             </Button>
-            <Button size="lg" variant="outline" asChild>
+            <Button size="lg" variant="outline" asChild className="hover:scale-105 transition-transform duration-200">
               <NextLink href="https://github.com/PIYUSH321123" target="_blank" rel="noopener noreferrer">
                 <FaGithub size={18} />
                 GitHub

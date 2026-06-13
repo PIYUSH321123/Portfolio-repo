@@ -34,7 +34,7 @@ return ()=>window.removeEventListener("scroll" , handleScroll)
         { label: "About", href: "#about" },
         { label: "Skills", href: "#skills" },
         { label: "Project", href: "#projects" },
-        { label: "Contact", href: "#contacts" },
+        { label: "Contact", href: "#contact" },
     ];
 
     // Workaround for mismatched Button prop typings
@@ -78,8 +78,11 @@ return ()=>window.removeEventListener("scroll" , handleScroll)
             <div className="container mx-auto px-4">
                 <div className="flex items-center justify-between h-16">
                     {/* Logo */}
-                    <Link href="/" className="text-xl font-bold bg-gradient-to-r from-blue-500 via-purple-500 to-pink-500 bg-clip-text text-transparent">
-                        Piyush Neware
+                    <Link href="/" className="text-xl tracking-tight">
+                         <span className="bg-gradient-to-r from-blue-500 via-purple-500 to-pink-500 bg-clip-text text-transparent">
+                            Piyush
+                         </span>
+                         <span className="text-foreground">.dev</span>
                     </Link>
 
                     {/* Desktop Menu */}
@@ -88,7 +91,7 @@ return ()=>window.removeEventListener("scroll" , handleScroll)
                             <Link
                                 href={item.href}
                                 key={item.href}
-                                className="text-sm font-medium transition-all duration-300 group"
+                                className="text-sm font-medium transition-all duration-300 group hover:scale-105 transform active:scale-95 inline-block"
                             >
                                 <span className="text-foreground group-hover:bg-gradient-to-r group-hover:from-blue-500 group-hover:via-purple-500 group-hover:to-pink-500 group-hover:bg-clip-text group-hover:text-transparent transition-all duration-300">
                                     {item.label}
@@ -99,7 +102,8 @@ return ()=>window.removeEventListener("scroll" , handleScroll)
                     <AnyButton
                        variant="default"
                        size="sm"
-                       className="hidden md:flex items-center gap-2 px-4 py-2 text-sm rounded-lg transition-all duration-200"
+                       className="hidden md:flex items-center gap-2 px-4 py-2 text-sm rounded-lg transition-all duration-200
+                       hover:scale-105 transform active:scale-95"
                        style={resumeStyle}
                        onMouseEnter={handleResumeMouseEnter}
                        onMouseLeave={handleResumeMouseLeave}
@@ -138,7 +142,7 @@ return ()=>window.removeEventListener("scroll" , handleScroll)
                                     <Link
                                         href={item.href}
                                         key={item.href}
-                                        className="text-sm font-medium text-foreground hover:text-primary transition-colors px-4 py-2"
+                                        className="text-sm font-medium text-foreground transition-all duration-200 hover:scale-105 transform active:scale-95 px-4 py-2 inline-block w-fit"
                                         onClick={() => setIsMobileMenuOpen(false)}
                                     >
                                         {item.label}
@@ -146,7 +150,8 @@ return ()=>window.removeEventListener("scroll" , handleScroll)
                                 ))}
                             </div>
                             <div className="w-full flex justify-center">
-                                <AnyButton variant="default" size="sm" className="gap-2 bg-gradient-to-r from-blue-500 to-purple-500 hover:from-blue-600 hover:to-purple-600 flex w-full justify-center items-center rounded-lg">
+                                <AnyButton variant="default" size="sm" className="gap-2 bg-gradient-to-r from-blue-500 to-purple-500 hover:from-blue-600 hover:to-purple-600 flex w-full justify-center items-center rounded-lg
+                                transition-all duration-200 hover:scale-105 transform active:scale-95">
                                     <Download className="w-4 h-4"/>
                                     Resume
                                 </AnyButton>

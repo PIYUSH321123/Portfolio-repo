@@ -16,7 +16,7 @@ export default function page() {
       {/*Github stats section*/}
       
       <section className="container mx-auto px-4 py-20">
-        <h2 className="text-3xl md:text-4x1 font-bold mb- text-center">
+        <h2 className="text-4xl md:text-5x1 font-bold mb-16 text-center">
           Github
           <span className="bg-gradient-to-r from-blue-500 via-purple-500 to-pink-500 bg-clip-text text-transparent">{" "}Activity</span>
         </h2>

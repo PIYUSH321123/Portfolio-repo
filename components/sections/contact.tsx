@@ -9,7 +9,7 @@ import ContactForm from "../../Contact-form";
 import Image from "next/image";
 const Contact = () => {
   return (
-    <section className="container mx-auto px-4 py-20">
+    <section id="contacts" className="container mx-auto px-4 py-20">
       <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-start">
         <motion.div
           initial={{ opacity: 0, x: -20 }}
@@ -24,17 +24,20 @@ const Contact = () => {
             opportunities to be part of your visions.
           </p>
           <div className="flex gap-4 mb-8">
-            <Button variant={"outline"} size={"icon"} asChild>
+            <Button variant={"outline"} size={"icon"} asChild 
+            className="hover:scale-110 transition-transform duration-200 active:scale-95">
               <a href="https://github.com/PIYUSH321123" target="_blank" rel="noopener noreferrer">
                 <FaGithub className="w-5 h-5" />
               </a>
             </Button>
-            <Button variant={"outline"} size={"icon"} asChild>
+            <Button variant={"outline"} size={"icon"} asChild 
+            className="hover:scale-110 transition-transform duration-200 active:scale-95">
               <a href="https://www.linkedin.com/in/piyush-neware-3907872aa/" target="_blank" rel="noopener noreferrer">
                 <FaLinkedin size={18} />
               </a>
             </Button>
-            <Button variant={"outline"} size={"icon"} asChild>
+            <Button variant={"outline"} size={"icon"} asChild 
+            className="hover:scale-110 transition-transform duration-200 active:scale-95">
               <a href="mailto:piyushneware74@gmail.com" target="_blank" rel="noopener noreferrer">
                 <Mail className="w-5 h-5" />
               </a>

@@ -61,7 +61,7 @@ const ContactForm = () => {
             <Field>
               <FieldLabel>Email</FieldLabel>
               <FieldContent>
-                <Input placeholder="piyushnew.com" {...field} />
+                <Input placeholder="piyushneware123@gmail.com" {...field} />
               </FieldContent>
               <FieldError />
             </Field>
@@ -85,7 +85,9 @@ const ContactForm = () => {
             </Field>
           )}
         />
-        <Button type="submit" className="w-full">
+        <Button type="submit" 
+        className="w-full bg-gradient-to-r from-blue-500 to-purple-500 hover:from-blue-600 hover:to-purple-600 flex w-full justify-center items-center rounded-lg
+        transition-all duration-200 hover:scale-[1.02] transform active:scale-95">
           Send message
         </Button>
       </form>
